@@ -1,6 +1,5 @@
-/* Temporary, give all divs borders */
 div {
-    border: 1px black solid;
+    border: 1px solid black;
 }
 
 #main {
@@ -11,7 +10,12 @@ div {
 
 #section-logo {
     flex: 3;
+}
 
+#logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 #section-form-parent {
@@ -28,3 +32,6 @@ div {
 #section-form-main {
     flex: 6;
 }
+
+/* Photo by <a href="https://unsplash.com/@ianliberry?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ian Liberry</a> on <a href="https://unsplash.com/photos/a-beautiful-sunset-over-a-lake-with-mountains-in-the-background-TCrxDRwS1Zs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+       */
