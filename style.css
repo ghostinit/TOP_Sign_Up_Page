@@ -1,3 +1,30 @@
-h1 {
-    color: red;
+/* Temporary, give all divs borders */
+div {
+    border: 1px black solid;
+}
+
+#main {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+#section-logo {
+    flex: 3;
+
+}
+
+#section-form-parent {
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+}
+
+#section-form-upper,
+#section-form-lower {
+    flex: 7;
+}
+
+#section-form-main {
+    flex: 6;
 }
