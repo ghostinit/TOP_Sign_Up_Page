@@ -147,6 +147,7 @@ div {
 #form-body {
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
 .form-row {
@@ -155,7 +156,7 @@ div {
     align-items: center;
 }
 
-#section-firstname {
+.section-left {
     margin-left: var(--margin-left-common);
 }
 
@@ -163,7 +164,10 @@ div {
     margin-left: 20px;
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"] {
     width: 30ch;
 }
 
