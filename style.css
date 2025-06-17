@@ -65,17 +65,27 @@ div {
 }
 
 #section-form-upper {
-    font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 2rem;
-    color: black;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     gap: 30px;
 }
 
+#section-form-upper,
+#form-header {
+    font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    color: black;
+
+}
+
+#form-header {
+    margin-top: 10px;
+}
+
 #hook-text,
-#hook-final {
+#hook-final,
+#form-header {
     margin-left: var(--margin-left-common);
 }
 
@@ -132,4 +142,35 @@ div {
     height: 100%;
     width: auto;
     padding: 10px 0px;
+}
+
+#form-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+#section-firstname {
+    margin-left: var(--margin-left-common);
+}
+
+.section-right {
+    margin-left: 20px;
+}
+
+input[type="text"] {
+    width: 30ch;
+}
+
+
+
+label {
+    font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: .75rem;
+    display: block;
 }
