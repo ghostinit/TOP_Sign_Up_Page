@@ -25,6 +25,7 @@
     --div-border-width: 0px;
     --color-logo-text: rgb(205, 205, 205);
     --margin-left-common: 5vw;
+    --input-border-color: rgb(185, 185, 185);
 }
 
 html {
@@ -156,7 +157,8 @@ div {
     align-items: center;
 }
 
-.section-left {
+.section-left,
+#form-row4 {
     margin-left: var(--margin-left-common);
 }
 
@@ -164,16 +166,32 @@ div {
     margin-left: 20px;
 }
 
-input[type="text"],
+/* input[type="text"],
 input[type="password"],
 input[type="email"],
 input[type="number"] {
     width: 30ch;
+} */
+
+input {
+    border: 1px solid var(--input-border-color);
+    padding: 1px 15px;
+    border-radius: 10px;
+    width: 30ch;
+    font: 1em "Roboto";
+
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #3eb1fd;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 
 
-label {
+label,
+#form-row4 {
     font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: .75rem;
     display: block;
