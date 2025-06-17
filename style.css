@@ -1,5 +1,18 @@
+/* VARS */
+:root {
+    --logo-banner-background: rgba(43, 43, 43, .3);
+    --logo-banner-height: 15vh;
+    --logo-banner-top: 20vh;
+    --div-border-width: 0px;
+    --color-logo-text: rgb(205, 205, 205);
+}
+
+html {
+    overflow: hidden;
+}
+
 div {
-    border: 1px solid black;
+    border: var(--div-border-width) solid black;
 }
 
 #main {
@@ -10,6 +23,7 @@ div {
 
 #section-logo {
     flex: 3;
+    position: relative;
 }
 
 #logo-img {
@@ -32,6 +46,36 @@ div {
 #section-form-main {
     flex: 6;
 }
+
+#logo-div {
+    background: var(--logo-banner-background);
+    width: 100%;
+    height: var(--logo-banner-height);
+    position: absolute;
+    top: var(--logo-banner-top);
+}
+
+#photo-credit {
+    background: var(--logo-banner-background);
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    color: var(--color-logo-text);
+}
+
+#photo-credit a {
+    text-decoration: none;
+    color: var(--color-logo-text);
+    font-size: 1rem;
+}
+
+#photo-credit a:hover {
+    text-decoration: underline;
+    font-size: 1.25rem;
+}
+
 
 /* Photo by <a href="https://unsplash.com/@ianliberry?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ian Liberry</a> on <a href="https://unsplash.com/photos/a-beautiful-sunset-over-a-lake-with-mountains-in-the-background-TCrxDRwS1Zs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
        */
