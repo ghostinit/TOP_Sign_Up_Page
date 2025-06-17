@@ -17,8 +17,8 @@
             <img id="logo-img" src="images/background.jpg" alt="A beautiful mountain sunset" />
             <div id="logo-div">
 
-                <img id="logo" src="images/logo.png" alt="A drawing of a person happily meditating in the woods">
-                RURAL
+                <img src="images/logo.png" alt="A drawing of a person happily meditating in the woods">
+                <p>RURAL</p>
             </div>
             <div id="photo-credit">
                 <p>
@@ -33,59 +33,58 @@
         </div>
         <div id="section-form-parent">
             <div id="section-form-upper">
-                <p id="hook-text">This is not a real place. If it were then you would absolutely want to come to Rural,
+                <p>This is not a real place. If it were then you would absolutely want to come to Rural,
                     forget all your troubles and maybe even catch a tan!<br>Book your stay <em>now!</em></p>
-                <!-- <p id="sign-up-text">Book your stay <em>now!</em></p> -->
-                <p id="hook-final">You <em>know</em> you need this.</p>
+                <p>You <em>know</em> you need this.</p>
             </div>
             <div id="section-form-main">
 
-                <p id="form-header">Let's Do This!</p>
-                <form action="" method="get">
+                <h2>Let's Do This!</h2>
+                <form id="booking-form" action="" method="get">
                     <div id="form-body">
-                        <div id="form-row1" class="form-row">
-                            <div id="section-firstname" class="section-left">
-                                <label for="first-name-input" id="first-name-label">First Name</label>
+                        <div class="form-row">
+                            <div>
+                                <label for="first-name-input">First Name</label>
                                 <input type="text" id="first-name-input" name="firstname" class="input-left"
                                     placeholder="Jane" required>
                             </div>
-                            <div id="section-lastname" class="section-right">
-                                <label for="last-name-input" id="last-name-label">Last Name</label>
+                            <div class="section-right">
+                                <label for="last-name-input">Last Name</label>
                                 <input type="text" id="last-name-input" name="lastname" placeholder="Doe" required>
                             </div>
                         </div>
-                        <div id="form-row2" class="form-row">
-                            <div id="section-email" class="section-left">
-                                <label for="email-input" id="email-label">E-Mail</label>
+                        <div class="form-row">
+                            <div>
+                                <label for="email-input">E-Mail</label>
                                 <input type="email" id="email-input" name="email" placeholder="janedoe@email.com"
                                     required>
                             </div>
-                            <div id="section-phone" class="section-right">
-                                <label for="phone-input" id="phone-label">Phone Number</label>
+                            <div class="section-right">
+                                <label for="phone-input">Phone Number</label>
                                 <input type="number" id="phone-input" name="phone" placeholder="2125552312" required>
                             </div>
                         </div>
-                        <div id="form-row3" class="form-row">
-                            <div id="section-password" class="section-left">
-                                <label for="password-input" id="password-label">Password</label>
+                        <div class="form-row">
+                            <div>
+                                <label for="password-input">Password</label>
                                 <input type="password" id="password-input" name="password" required>
                             </div>
-                            <div id="section-confirm" class="section-right">
-                                <label for="confirm-input" id="confirm-label">Confirm Password</label>
+                            <div class="section-right">
+                                <label for="confirm-input">Confirm Password</label>
                                 <input type="password" id="confirm-input" name="confirm" required>
                             </div>
                         </div>
-                        <div id="form-row4" class="form-row">
+                        <div class="form-row">
                             <p><em>* All Fields Required</em></p>
                         </div>
                     </div>
                 </form>
             </div>
             <div id="section-form-lower">
-                <button id="submit-button" type="submit">Book Now!</button>
+                <button id="submit-button" type="submit" form="booking-form">Book Now!</button>
                 <div id="already-stayed">
                     <p>Already stayed with us?</p>
-                    <a href="#" id="login">Log In</a>
+                    <a href="#">Log In</a>
                 </div>
             </div>
         </div>
