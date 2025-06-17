@@ -1,10 +1,30 @@
 /* VARS */
+
+@font-face {
+    font-family: 'Frijole';
+    src: url('fonts/frijole-regular-webfont.woff2') format('woff2'),
+        url('fonts/frijole-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/roboto-variablefont_wdthwght-webfont.woff2') format('woff2'),
+        url('fonts/roboto-variablefont_wdthwght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     --logo-banner-background: rgba(43, 43, 43, .3);
     --logo-banner-height: 15vh;
     --logo-banner-top: 20vh;
     --div-border-width: 0px;
     --color-logo-text: rgb(205, 205, 205);
+    --margin-left-common: 5vw;
 }
 
 html {
@@ -41,7 +61,33 @@ div {
 #section-form-upper,
 #section-form-lower {
     flex: 7;
+    background: rgba(67, 72, 66, 0.1);
 }
+
+#section-form-upper {
+    font-family: 'Roboto';
+    font-size: 2rem;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+#hook-text,
+/* #sign-up-text, */
+#hook-final {
+    margin-left: var(--margin-left-common);
+}
+
+#hook-text {
+    width: 60ch;
+}
+
+#hook-final {
+    margin-bottom: 5vh;
+}
+
 
 #section-form-main {
     flex: 6;
@@ -53,6 +99,13 @@ div {
     height: var(--logo-banner-height);
     position: absolute;
     top: var(--logo-banner-top);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Frijole';
+    font-size: 10vh;
+    color: white;
 }
 
 #photo-credit {
@@ -74,6 +127,12 @@ div {
 #photo-credit a:hover {
     text-decoration: underline;
     font-size: 1.25rem;
+}
+
+#logo {
+    height: 100%;
+    width: auto;
+    padding: 10px 0px;
 }
 
 
