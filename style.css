@@ -201,6 +201,9 @@ div[class="form-row"] p {
     margin-top: 15px;
     margin-left: var(--margin-left-common);
     margin-bottom: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
 }
 
 #submit-button:active {
@@ -219,4 +222,10 @@ div[class="form-row"] p {
     text-decoration: none;
     color: #202006;
     font-weight: bold;
+}
+
+#submit-button:hover:not(:active) {
+    background: #383810;
+    transform: scale(1.03);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
 }
