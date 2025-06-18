@@ -71,21 +71,25 @@
 #section-form-upper,
 #section-form-main h2 {
     font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.5rem;
     color: black;
 
 }
 
-
-#section-form-upper p,
 #section-form-main h2 {
+    font-size: 1.5rem;
     margin-left: var(--margin-left-common);
-    width: 60ch;
-}
 
-#section-form-main h2 {
     margin-top: 10px;
 }
+
+
+#section-form-upper p {
+    margin-left: var(--margin-left-common);
+    font-size: 1.5vw;
+
+    width: clamp(200px, 50ch, 60ch);
+}
+
 
 
 #section-form-upper p:last-child {
